@@ -6,20 +6,20 @@ function App() {
   const dispatch = useDispatch()
   const cash = useSelector(state => state.cash.cash)
 
-  const addCash = (cash) => {
-    dispatch({type: 'ADD_CASH', payload: cash})
+  const addCash = () => {
+    dispatch({type: 'ADD_CASH', payload: 2})
   }
 
-  const getCash = (cash) => {
-    dispatch({type: 'GET_CASH', payload: cash})
+  const getCash = () => {
+    dispatch({type: 'GET_CASH', payload: 2})
   }
 
   return(
     <div className={'app'}>
       <div style={{fontSize: '2rem'}}>{cash}</div>
       <div style={{display: 'flex'}}>
-        <button onClick={() => addCash(Number(prompt()))}>Add Cash</button>
-        <button onClick={() => getCash(Number(prompt()))}>Get Cash</button>
+        <button onClick={() => addCash()}>Add Cash</button>
+        <button onClick={() => getCash()}>Get Cash</button>
       </div>
     </div>
   )

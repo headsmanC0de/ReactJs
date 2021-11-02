@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+button{
+  padding: 10px;
+  margin-left: 25px;
+  outline: none;
+  background: #237878;
+  font-size: 2rem;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
